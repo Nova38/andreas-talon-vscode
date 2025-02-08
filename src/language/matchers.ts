@@ -124,6 +124,10 @@ function getPrefixAtPosition(
         return { type: "capture", prefix };
     }
 
+    // Check if we are instead if we should auto complete key, deck, gamepad
+    // Then if the line up to this point is like `key` or `key(` offer to complete a valid key
+    // If the line is like `key(f` and a `:` is typed offer completion for the modifiers
+    
     return undefined;
 }
 
